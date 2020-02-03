@@ -20,8 +20,19 @@ puts turns
 i = 0
 
 while i < turns
-  turn = Turn.new((i / 2).ceil + 1)
+  turn = Turn.new
   player = turn.current_player
   question = Question.new(player)
+  if question.correct_answer == true and player == 1
+    player1.update_score
+  end
+  if question.correct_answer == true and player == 2
+    player2.update_score
+  end
+  turn.print_score(player1.score, player2.score, turn)
+  if i == turns - 1
+    turn.print_outcome(player1.score, player2.score)
+  end
   i += 1
 end
+

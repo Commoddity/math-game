@@ -4,9 +4,8 @@ Player should contain the initialization for each player and attributes such as 
 class Player
   @@player_id = 1
 
+  attr_accessor :score
   attr_reader :name, :player_id
-
-  attr_writer :score
 
   def initialize(name)
     @player_id = @@player_id
@@ -16,8 +15,8 @@ class Player
     puts "Welcome #{@name}, you are Player #{@player_id}."
   end
 
-  def update_score(score)
-    @score = score
+  def update_score
+    @score += 1
   end
 
 end
