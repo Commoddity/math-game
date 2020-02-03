@@ -1,6 +1,5 @@
 require 'pry'
 
-require './math'
 require './player'
 require './turn'
 require './question'
@@ -15,7 +14,6 @@ player2 = Player.new(gets.chomp)
 
 puts "How many turns would you like to play for?"
 turns = (gets.chomp).to_i * 2
-puts turns
 
 i = 0
 
