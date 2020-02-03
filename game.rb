@@ -9,6 +9,7 @@ class Game
   
   def initialize
     @game_id = @@game_id
+    @@game_id += 1
     
     puts "Player 1: please enter your name: "
     @player1 = Player.new(gets.chomp)
