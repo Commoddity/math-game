@@ -1,6 +1,3 @@
-=begin
-Player should contain the initialization for each player and attributes such as name and score
-=end
 class Player
   @@player_id = 1
 

@@ -1,6 +1,3 @@
-=begin
-The Turn will describe whose turn it currently is as well as print new turn
-=end
 class Turn
   attr_reader :current_player, :print_score, :player_turn, :current_turn
 

@@ -1,6 +1,3 @@
-=begin
-the Question will contain the questions that can be asked as strings as well as their correct answers
-=end
 class Question
   attr_reader :player, :player_answer, :correct_answer
   
